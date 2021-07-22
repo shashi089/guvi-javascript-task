@@ -1,0 +1,31 @@
+2) How the browser actually render a website
+
+* High Level Flow
+   Parse THML & CSS -----> Render Tree ------> Layout ----->Paint
+
+* Parsing HTML 
+   1.Html is forgiving by Nature 2.Parsing isn't straight forward and can be halted
+   3.it's reentrant means parsing process can be interrupted.
+
+* why script tag uses at bottom  :- 
+    1.Parse uninterrupted 2.Faster to render 3.defer and async attributes
+
+* Render Tree
+   DOM+CSSOM
+    1.combines the two object models,style resolution 
+    2.This is the actual respresentation of what will show on screen
+
+* Layout
+   Recursive process :- Traverse render tree and layout its children first
+
+* Paint 
+  Paint setup :- 
+  1.will take the layout render trees 
+  2.Creates layers
+  3.Incremental process
+  4.builds up over 12 phases
+
+* Inline critical CSS
+    1.The most important bits of site/app
+    2.Speeds up first paint times
+    3.External js and CSS can block
