@@ -1,1 +1,15 @@
+2)Own data in JSON format
 
+var data = {
+  name: 'Shashidhar Naik',
+  email: 'shashidharnaik89@gmail.com',
+  place: 'Hukkeri',
+  dist: 'Belagavi',
+  state: 'karnataka',
+  education: {
+    degree: 'B.E (E&C)',
+    passout: '2017',
+    college: "BLDEA'S CET VIJAYAPUR",
+  },
+  linkedin: 'https://www.linkedin.com/in/shashidhar-naik-aab5b512a',
+}
