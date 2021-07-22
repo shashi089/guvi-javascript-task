@@ -1,0 +1,12 @@
+1) Difference between browser js and Node js
+
+  * In browser most of the time interact with DOM, or other platform API's like Cookies. But those do not exist in 
+    Node.js. Because Nodejs dont have the document,window and all other objects that are provided by the browser.
+
+  * Browser dont have all the nice API's that Nodejs provides through its modules , like the filesystem access functionality.
+
+  * Browser is bit slow to upgrade but Nodejs is so fast
+
+  * In Browser we can use babel to transform our code to be ES5-compatible before shipping it to the browser but in Node.js  we won't need that
+
+  * Node.js uses the CommonJS module system, while in the browser we are starting to see the ES Modules standard being implemented.
