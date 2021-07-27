@@ -1,0 +1,51 @@
+Q1 Fix the code to get the largest of three.
+Code:
+aa = (f,s,t) => {
+ let f,s,t;
+ console.log(f,s,t);
+ if(f>s &&f>t){
+ console.log(f)}
+ else if(s>f && s>t){
+ console.log(s)}
+ else{
+ console.log(t)}
+}
+aa(1,2,3);
+
+
+Ans :-  aa = (f, s, t) => {
+        console.log(f, s, t)
+        if (f > s && f > t) {
+          console.log(f)
+        } else if (s > f && s > t) {
+          console.log(s)
+        } else {
+          console.log(t)
+        }
+      }
+      aa(1, 2, 3)
+
+-------------------------------------------------------------------------------------------------
+Q2.Fix the code to Sum of the digits present in the number
+Code:
+let n = 123;
+console.log(add(n));
+function add(n)
+{
+let sum = 10;
+for(var i=0;i<n.length;i++){
+ sum+=n[i]
+ }
+ return sum;
+}
+
+Ans :- let n = 123
+      console.log(add(n))
+      function add(n) {
+        let sum = 0
+        while (n) {
+          sum += n % 10
+          n = Math.floor(n / 10)
+        }
+        return sum
+      }
