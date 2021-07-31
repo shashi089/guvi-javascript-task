@@ -1,0 +1,79 @@
+Q1 a.Get all the countries from Asia continent /region using Filter function
+var xhr = new XMLHttpRequest()
+xhr.open('GET', 'https://restcountries.eu/rest/v2/all')
+xhr.onload = function () {
+  var data = JSON.parse(this.response)
+
+  var result = data.filter((element) => element.region === 'Asia')
+
+  console.log(result)
+}
+xhr.send()
+
+-----------------------------------------------------------------------------------------------------------
+
+b)Get all the countries with a population of less than 2 lakhs using Filter function
+
+var xhr = new XMLHttpRequest()
+xhr.open('GET', 'https://restcountries.eu/rest/v2/all')
+xhr.onload = function () {
+  var data = JSON.parse(this.response)
+
+  var result = data.filter((element) => element.population < 200000)
+
+  console.log(result)
+}
+xhr.send()
+----------------------------------------------------------------------------------------------------------
+
+C)Print the following details name, capital, flag using forEach function
+
+var xhr = new XMLHttpRequest()
+xhr.open('GET', 'https://restcountries.eu/rest/v2/all')
+xhr.onload = function () {
+  var data = JSON.parse(this.response)
+
+  data.forEach((ele) =>
+    console.log(
+      `name: ${ele.name} , capital: ${ele.capital}, flag: ${ele.flag}`
+    )
+  )
+}
+xhr.send()
+
+----------------------------------------------------------------------------------------------------------
+d) Print the total population of countries using reduce function  
+
+var xhr = new XMLHttpRequest()
+xhr.open('GET', 'https://restcountries.eu/rest/v2/all')
+xhr.onload = function () {
+  var data = JSON.parse(this.response)
+
+  var result = data.reduce((prev, element) => prev + element.population, 0)
+
+  console.log(result)
+}
+xhr.send()
+
+----------------------------------------------------------------------------------------------------------
+e)Print the country which uses US Dollars as currency.
+
+var xhr = new XMLHttpRequest()
+xhr.open('GET', 'https://restcountries.eu/rest/v2/all')
+xhr.onload = function () {
+  var data = JSON.parse(this.response)
+
+  var result = data.filter((ele) =>
+    ele.currencies.some(
+      (currency) =>
+        currency.name === 'United States dollar' ||
+        currency.name === 'United State Dollar'
+    )
+  )
+
+  console.log(result)
+}
+xhr.send()
+
+
+						
