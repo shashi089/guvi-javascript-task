@@ -1,0 +1,29 @@
+Q2. 
+<html lang="en">
+    <head>
+        <title>Document
+            <body>
+                guvi
+    </head>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </body>
+    </html>
+    
+Ans:-
+    
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    guvi
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div>Guvi Geek Network</div>
+  </body>
+</html>
