@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .row {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <h3>Yes! I want to subscribe to Mag-O-Zine</h3>
+      <div class="row">
+        <div class="colomn">
+          <input type="text" /> <br />
+          <label for="fname">firstName</label>
+        </div>
+        <div class="colomn">
+          <input type="text" /> <br />
+          <label for="lname">lastName</label>
+        </div>
+      </div>
+      <input type="text" /> <br />
+      <label for="">Address</label>
+      <div class="row">
+        <div class="colomn">
+          <input type="text" /> <br />
+          <label for="city">City</label>
+        </div>
+        <div class="colomn">
+          <input type="text" /> <br />
+          <label for="state">State</label>
+        </div>
+        <div class="colomn">
+          <input type="text" /> <br />
+          <label for="zip">Zip</label>
+        </div>
+      </div>
+
+      <label for="">Subscribe for:</label>
+      <input type="checkbox" /> <label for="">1year</label>
+      <input type="checkbox" /> <label for="">2year</label>
+      <br />
+      <label for="">Send me more information about</label> <br />
+      <input type="checkbox" /> <label for="">Computer-Zine</label><br />
+      <input type="checkbox" /> <label for="">Finishing-Zine</label><br />
+      <input type="checkbox" /> <label for="">Cat-O-Zine</label>
+    </form>
+  </body>
+</html>
