@@ -101,7 +101,7 @@ if (value === 4) {
       console.log("I couldn't figure out");
 }
 
-Ans:-
+Ans:-value = parseInt(value);
 -------------------------------------------------------------------------------------------------
 Q9.Fix the code to welcome the Employee
 
@@ -252,7 +252,7 @@ while (countdown > 0) {
   }
 }
 
-Ans:- 
+Ans:- countdown++;
 -------------------------------------------------------------------------------------------------
 
 Q18 Whats the msg printed and why?
